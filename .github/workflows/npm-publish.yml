@@ -16,7 +16,9 @@ jobs:
         node-version: [14.x]
 
     runs-on: ${{ matrix.os }}
-
+    defaults:
+      run:
+        working-directory: ./packages/ts-react-lib
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -43,8 +45,6 @@ jobs:
 
       - name: Install deps
         run: pnpm install --no-frozen-lockfile
-      - name: Change Dir
-        run: cd ./packages/ts-react-lib
       # Runs a set of commands using the runners shell
       - name: Build and Test
         run: pnpm test
