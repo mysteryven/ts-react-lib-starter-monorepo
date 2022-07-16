@@ -4,14 +4,22 @@ Inspired by [ts-lib-starter](https://github.com/egoist/ts-lib-starter)
 
 ## Using this template
 
-1. Change dir `packages/ts-react-lib` with your own lib name
-2. Search `ts-react-lib` and replace it with your custom package name.
+- Change directory `packages/ts-react-lib` with your own lib name
+- Search `ts-react-lib` and replace it with your custom package name.
 
-PS: if you want to download this template without `.git` folder:
+If you want to download this template without `.git` folder, you can use degit:
 
 ```
 npm i degit -g
 degit https://github.com/mysteryven/ts-react-lib-starter.git
+```
+
+You can use this template to bootstrap a custom hook library、custom component library. 
+
+`pagckages/ts-react-lib/shim.js` is used to [auto import react](https://github.com/evanw/esbuild/issues/334#issuecomment-711150675). Feel free to delete other files in src but not `shim.js`. If you want to change its directory or name, make sure to also change in `tsup.config.ts`  
+
+```
+ inject: ['path/to/shim.js']
 ```
 
 ## Features
