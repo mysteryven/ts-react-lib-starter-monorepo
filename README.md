@@ -1,6 +1,6 @@
 # ts-react-lib-starter
 
-Inspired by [ts-lib-starter](https://github.com/egoist/ts-lib-starter)
+Inspired by [ts-lib-starter](https://github.com/egoist/ts-lib-starter).
 
 You can use this template to bootstrap a custom hook library、custom component library. 
 ## Using this template
