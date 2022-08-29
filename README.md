@@ -13,7 +13,7 @@ If you perfer downloading this template without `.git` folder, you can use degit
 ```bash
 npm i degit -g
 
-degit https://github.com/mysteryven/ts-react-lib-starter.git
+degit https://github.com/mysteryven/ts-react-lib-starter-monorepo.git
 ```
 
 `pagckages/ts-react-lib/shim.js` is used to [auto import react](https://github.com/evanw/esbuild/issues/334#issuecomment-711150675). Feel free to delete other files in `src` but not `shim.js`. If you want to change its directory or its name, make sure also change its path in `tsup.config.ts`  
